@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{ block.super }} | Detail{% endblock %}
+
+
+{% block content %}
+    <a class="jumbotron" href="{% url 'home' %}">Back Home</a>
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class='posttitle loader text-primary text-center'>{{ projects.title }}</h1>
+
+        <div class="container">
+            <pre class='text-center'>{{ projects.description|safe }}</pre>
+        </div>
+    </div>
+    <div class="card">
+        {% for project in projects.programing_languages.all %}
+            <li>
+                <button class="btn btn-primary margin-b-30 text-center">{{ project }}</button>
+            </li>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}

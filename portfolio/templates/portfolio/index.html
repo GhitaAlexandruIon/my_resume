@@ -1,0 +1,31 @@
+
+{% load static %}
+
+
+
+{% block content %}
+    <div class="container">
+        <h2 class="mt-5">Portfolio</h2>
+        <hr>
+        <div class="row">
+            {% for project in projects %}
+                <div class="column col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class="content">
+                        <div class="">
+                            {% if project.url %}
+                                <a href="{{ project.url }}">
+                                    <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
+                                </a>
+                            {% else %}
+                                <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">
+                            {% endif %}
+                            <h3><a class="btn btn-primary" href="{% url 'projects_detail' pk=project.pk %}">{{ project.title }}</a></h3>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+

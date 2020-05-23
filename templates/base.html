@@ -1,0 +1,51 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,Django,Python">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Django Blog">
+    <meta name="author" content="Ghita Alexandru">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/superslides.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/styles.css' %}css/style.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="loader">
+		<div class="inner"></div>
+	</div>
+
+{% include 'navbar.html' %}
+{% block content %}
+
+{% endblock %}
+<hr>
+
+    <script src="{% static 'portfolio/js/countUp.js' %}"></script>
+	<script src="{% static 'portfolio/js/countUp-jquery.js' %}"></script>
+	<script src="{% static 'portfolio/js/jquery.superslides.min.js' %}"></script>
+	<script src="{% static 'portfolio/js/jquery.easypiechart.min.js' %}"></script>
+	<script src="{% static 'portfolio/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'portfolio/js/typed.min.js' %}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+	<script src="{% static 'portfolio/js/script.js' %}js/script.js"></script>
+</body>
+</html>
