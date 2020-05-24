@@ -1,8 +1,75 @@
+{% load static %}
+{##}
+{#<div class="copyrightSection">#}
+{##}
+{#    <div class="col-md-12 text-center">#}
+{#        <p>&copy; Copyright Ghita Alexandru 2020</p>#}
+{#    </div>#}
+{##}
+{#</div>#}
 
-<div class="copyrightSection">
+{#<footer class="footer">#}
+{#    <div class="footer__logo-box">#}
+{#        <img src="{% static 'portfolio/img/logo.png' %}" alt="" class="footer__logo">#}
+{#    </div>#}
+{#    <div class="row">#}
+{#        <div class="col-1-of-2">#}
+{#            <div class="footer__navigation">#}
+{#                <ul class="footer_list">#}
+{#                    <li class="footer_item"><a href="#" class="footer__link">nume</a></li>#}
+{#                    <li class="footer_item"><a href="#" class="footer__link">nume</a></li>#}
+{#                    <li class="footer_item"><a href="#" class="footer__link">nume</a></li>#}
+{#                    <li class="footer_item"><a href="#" class="footer__link">nume</a></li>#}
+{#                </ul>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="col-1-of-2">#}
+{#            <p class="footer__copyright">#}
+{#                Lorem ipsum dolor sit amet, consectetur adipisicing elit,#}
+{#                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.#}
+{#                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo#}
+{#                consequat.#}
+{#                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.#}
+{#                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est#}
+{#                laborum.#}
+{#            </p>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+{#</footer>#}
 
-    <div class="col-md-12 text-center">
-        <p>&copy; Copyright Ghita Alexandru 2020</p>
+<footer class="footer">
+    <div class="footer__logo-box">
+
+        <picture class="footer__logo">
+            <source srcset="{% static 'portfolio/img/logo.png' %} 1x, {% static 'portfolio/img/logo.png' %} 2x"
+                    media="(max-width: 37.5em)">
+            <img srcset="{% static 'portfolio/img/logo.png' %} 1x, {% static 'portfolio/img/logo.png' %} 2x" alt="Full logo"
+                 src="{% static 'portfolio/img/logo.png' %}">
+        </picture>
+
+
     </div>
-
-</div>
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <p class="footer__copyright">
+                Built by <a href="#" class="footer__link">Ghita Alexandru</a>
+                <a href="#" class="footer__link">Portofolio.</a><br>
+                Copyright &copy; by Ghita Alexandru.
+            </p>
+        </div>
+    </div>
+</footer>
