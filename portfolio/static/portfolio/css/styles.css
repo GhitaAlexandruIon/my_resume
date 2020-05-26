@@ -327,9 +327,9 @@ html {
     margin: 0;
 }
 
-.nav-logo{
-    width: 25%;
-    height: 25%;
+img.nav-logo{
+    width: 50px;
+    height: 50px;
     margin: 0;
     float: left;
 }
@@ -353,6 +353,16 @@ html {
 .navbar-brand,
 .navbar-brand:hover {
     color: #fff;
+}
+
+div ul li a{
+    letter-spacing: 13px;
+    font-size: 17px;
+    font-weight: 700;
+}
+div ul li a:hover{
+    background-color: #666;
+    text-shadow: 2px 2px black;
 }
 
 button .navbar-toggler-icon {
@@ -381,7 +391,22 @@ button .navbar-toggler-icon {
     height: 100%;
     background: url(../img/loader.gif) center center no-repeat;
 }
-
+div a img#portfolioImg{
+    width: 360px;
+    height: 270px;
+    margin: auto;
+}
+div button.programingLanguages{
+    list-style-type: none;
+    display: block;
+    color: #0f74a8;
+    background-color: #00FF00;
+    float: left;
+}
+div img.imgDetail{
+    width: 100%;
+    margin-right: 0;
+}
 
 
 

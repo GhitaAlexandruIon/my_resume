@@ -3,18 +3,31 @@
 
 
 {% block content %}
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="background: linear-gradient(#f9f9f9, dodgerblue)">
         <h1 class='posttitle loader text-primary text-center'>{{ projects.title }}</h1>
 
         <div class="container">
-            <pre class='text-center'>{{ projects.description|safe }}</pre>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class='text-center'>{{ projects.description|safe }}</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="imgDetail" src="{{ projects.image.url }}" alt="">
+                </div>
+            </div>
+            
         </div>
     </div>
-    <div class="card">
+    <div class="container">
         {% for project in projects.programing_languages.all %}
-            <li>
-                <button class="btn btn-primary margin-b-30 text-center">{{ project }}</button>
-            </li>
+            <div class="row">
+                <div class="">
+
+                            <button class=" programingLanguages">{{ project }}</button>
+
+                </div>
+            </div>
+
 
         {% endfor %}
     </div>
