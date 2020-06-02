@@ -15,21 +15,26 @@
                     <img class="imgDetail" src="{{ projects.image.url }}" alt="">
                 </div>
             </div>
-            
         </div>
     </div>
     <div class="container">
-        {% for project in projects.programing_languages.all %}
-            <div class="row">
-                <div class="">
-
-                            <button class=" programingLanguages">{{ project }}</button>
-
+    {% for project in projects.programing_languages.all %}
+{#        <div class="row">#}
+{#            <div class="col-sm-2 col-md-4 col-lg-6">#}
+{#                <button class=" programingLanguages">{{ project }}</button>#}
+{#            </div>#}
+{#        </div>#}
+        <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body myCardBody">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">{{ project }}</a>
                 </div>
             </div>
-
-
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
+</div>
 
 {% endblock %}

@@ -74,7 +74,7 @@ html {
 
 .skillsSection,
 .contactSection {
-    background-color: #e74c3c;
+    background-color: #2e9ff0;
     color: #fff;
 }
 
@@ -145,7 +145,7 @@ html {
     font-size: 56px;
     margin-bottom: 10px;
     font-weight: 400;
-    color: #e74c3c;
+    color: #2e9ff0;
 }
 
 .squareContent h3 {
@@ -176,7 +176,7 @@ html {
 
 .contactButton:hover {
     text-decoration: none;
-    color: #e74c3c;
+    color: #2e9ff0;
     background-color: #fff;
 }
 
@@ -193,8 +193,8 @@ html {
 }
 
 .filter .current {
-    background-color: #e74c3c;;
-    border-color: #e74c3c;
+    background-color: #2e9ff0;;
+    border-color: #2e9ff0;
     color: #fff;
 }
 
@@ -254,7 +254,7 @@ html {
 .items a {
     width: 40px;
     height: 40px;
-    background-color: #e74c3c;
+    background-color: #2e9ff0;
     position: relative;
     display: inline-block;
 
@@ -316,17 +316,6 @@ html {
 .items {
     padding: 0;
 }
-
-.copyrightSection {
-    background-color: #000;
-    color: #fff;
-    padding: 30px 5px;
-}
-
-.copyrightSection p {
-    margin: 0;
-}
-
 img.nav-logo{
     width: 50px;
     height: 50px;
@@ -335,7 +324,7 @@ img.nav-logo{
 }
 
 #navigation {
-    background-color: #e74c3c;
+    background-color: #2e9ff0;
     padding: 20px 10px;
     z-index: 100;
     width: 100%;
@@ -355,13 +344,11 @@ img.nav-logo{
     color: #fff;
 }
 
-div ul li a{
-    letter-spacing: 13px;
-    font-size: 17px;
+div ul li a.nav-link{
     font-weight: 700;
+    font-size: 17px;
 }
 div ul li a:hover{
-    background-color: #666;
     text-shadow: 2px 2px black;
 }
 
@@ -395,19 +382,29 @@ div a img#portfolioImg{
     width: 360px;
     height: 270px;
     margin: auto;
+
+}
+div img .imgDetail{
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    width: 360px;
+    height: 270px;
 }
 div button.programingLanguages{
     list-style-type: none;
     display: block;
     color: #0f74a8;
-    background-color: #00FF00;
+    background-color: #2e9ff0;
     float: left;
 }
 div img.imgDetail{
     width: 100%;
     margin-right: 0;
 }
-
+div.myCardBody{
+    width: 150px;
+   display: block;
+    position: relative;
+}
 
 
 
