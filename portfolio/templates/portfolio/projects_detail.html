@@ -15,18 +15,20 @@
         </div>
     </div>
     <div class="container">
-    {% for project in projects.programing_languages.all %}
-        <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body myCardBody">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="portfolio-wrapper">
+            {% for project in projects.programing_languages.all %}
+                <div class="portfolio-object">
+                <div class="portfolio-box">
                     <a href="#" class="btn btn-primary">{{ project }}</a>
+                    <div class="portfolio-text">
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                        Cras
+                        purus odio.
+                    </div>
                 </div>
-            </div>
+                </div>
+            {% endfor %}
+
         </div>
-    {% endfor %}
-</div>
+    </div>
 {% endblock %}
-</div>
