@@ -25,7 +25,7 @@ SECRET_KEY = '8g!6%y+7ebllc6cbep3d$s)c(j3-8zx)k&9+t-o@1cx!+4xd=u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ghitaalexandruion.pythonanywhere.com']
 
 
 # Application definition
@@ -127,7 +127,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/static_root')
 MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/static_root')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles/media_root')
