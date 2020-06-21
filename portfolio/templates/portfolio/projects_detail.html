@@ -1,34 +1,35 @@
 {% extends 'base.html' %}
 {% block title %}{{ block.super }} | Detail{% endblock %}
 {% block content %}
+
     <div class="jumbotron jumbotron-fluid" style="background: linear-gradient(#f9f9f9, dodgerblue)">
-        <h1 class='posttitle loader text-primary text-center'>{{ projects.title }}</h1>
+        <h1 class='posttitle  text-primary text-center'>{{ projects.title }}</h1>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <p class='text-center'>{{ projects.description|safe }}</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <img class="imgDetail" src="{{ projects.image.url }}" alt="">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="portfolio-wrapper">
-            {% for project in projects.programing_languages.all %}
-                <div class="portfolio-object">
-                <div class="portfolio-box">
-                    <a href="#" class="btn btn-primary">{{ project }}</a>
-                    <div class="portfolio-text">
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                        Cras
-                        purus odio.
-                    </div>
-                </div>
-                </div>
-            {% endfor %}
+        <div class="container">
+            <div class="portfolio-wrapper">
 
+                {% for project in projects.programing_languages.all %}
+                    <div class="portfolio-object">
+                        <div class="">
+{#                            <a href="#" class="btn btn-primary">{{ project }}</a>#}
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip"
+                                    data-placement="bottom" title="some">
+                                {{ project }}
+                            </button>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
         </div>
     </div>
 {% endblock %}
