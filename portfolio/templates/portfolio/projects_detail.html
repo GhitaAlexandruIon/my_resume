@@ -3,13 +3,13 @@
 {% block content %}
 
     <div class="jumbotron jumbotron-fluid" style="background: linear-gradient(#f9f9f9, dodgerblue)">
-        <h1 class='text-center'>{{ projects.title }}</h1>
+        <h1 id="detailTitle" class='text-center'>{{ projects.title }}</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class='text-center'>{{ projects.description|safe }}</p>
+                    <p class='text-center projectDetailText '>{{ projects.description|safe }}</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 .d-sm-none .d-md-block">
                     <img class="imgDetail" src="{{ projects.image.url }}" alt="">
                 </div>
             </div>
@@ -20,8 +20,7 @@
                 {% for project in projects.programing_languages.all %}
                     <div class="portfolio-object">
                         <div class="">
-{#                            <a href="#" class="btn btn-primary">{{ project }}</a>#}
-                            <button type="button" class="btn btn-primary" data-toggle="tooltip"
+                            <button  type="button" class="btn btn-primary btn-{{ project.pk }}" data-toggle="tooltip"
                                     data-placement="bottom" title="{{ project.facts }}">
                                 {{ project }}
                             </button>
