@@ -46,11 +46,10 @@
                         </div>
                     {% endif %}
 
-                    <h4><a class="btn btn-primary"
+                    <h4><a class="btn btn-primary p-btn btn--white"
                            href="{% url 'projects_detail' pk=project.pk %}">{{ project.title }}</a></h4>
                     <div class="portfolio-text">
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-                        purus odio.
+                        {{ project.description|safe|truncatewords:23}}
                     </div>
                 </div>
             {% endfor %}
