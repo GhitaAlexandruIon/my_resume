@@ -8,12 +8,12 @@
             <div class="owl-carousel owl-theme">
                 {% for skill in skills %}
                 <div class="skill">
-				    	<span class="chart" data-percent="{{skills.percent}}">
-				    		<span class="percent">{{skills.percent  }}</span>
+				    	<span class="chart" data-percent="{{skill.percent}}">
+				    		<span class="percent">{{skill.percent  }}</span>
 				    		<canvas height="152" width="152"></canvas>
 				    	</span>
-                    <h4>{{skills.name  }}</h4>
-                    <p>{{skills.text }}</p>
+                    <h4>{{skill.name  }}</h4>
+                    <p>{{skill.text }}</p>
                 </div>
                 {% endfor %}
             </div>
