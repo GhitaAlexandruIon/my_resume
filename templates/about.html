@@ -1,19 +1,50 @@
 {% load static %}
+<div class="aboutContainer jumbotron">
 <div id="about" class="section">
-    <div class="container">
+    <div class="container jumbotron">
         <div class="row">
             <div class="col-md-5">
                 <img class="aboutImage" src="{% static 'portfolio/img/profile.jpg' %}" alt="">
             </div>
             <div class="col-md-7">
-                <h4>My name is Ghita Alexandru</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto cupiditate deserunt eos
-                    et eveniet excepturi, incidunt nam natus quo similique sunt totam? Alias dolor et maxime
-                    perspiciatis. Fuga, laudantium!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam architecto at, consequuntur
-                    dolore expedita, fugit ipsam labore magnam necessitatibus nihil nobis obcaecati odio optio, placeat
-                    quibusdam recusandae rem repellat?</p>
+                <h4 class="display-4">My name is <span class="display-3 font-weight-bold" style="color: #1b86e5">Ghita Alexandru</span>
+                </h4>
+                <hr class="aboutHr">
+                <p>I am an enthusiastic learner i love programing and solving errors.
+                    I chose to learn python because is simple and is becoming more and more a popular programing
+                    language.</p>
+                <hr class="aboutHr">
+                <p>I love Django Framework is simple and you can make your website or application really stand out and
+                    is simple. You can start a server in minutes and that is great!
+                    Django follows the Don’t Repeat Yourself (DRY) principle, making this framework time-efficient. In
+                    other words, there’s no need to rewrite existing code because Django allows you to assemble your
+                    website like a Lego set
+                </p>
+                <hr class="aboutHr">
+                <p>There isn't much to say about me: I like cars, reading, programing and i like to find a job where i
+                    can combine my passions and do something great!!</p>
             </div>
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="mb-5">Education</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">ScriuCod Brasov </h3>
+                <div class=" mb-3">Python Web Development</div>
+            </div>
+            <div class="edTextRight"><span class="text-primary">April 2019 - Present</span></div>
+        </div>
+        <hr class="aboutHr">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Liceul Teoretic Radu Vladescu Patarlagele</h3>
+                <div class=" mb-3">Matematica - Informatica</div>
+            </div>
+            <div class="edTextRight"><span class="text-primary">September 2010 - May 2014</span></div>
+        </div>
+    </div>
+</div>
 </div>
