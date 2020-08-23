@@ -1,35 +1,7 @@
-{#<div id="portfolio" class="section">#}
-{#    <div class="container">#}
-{#        <h2 class="mt-5">Portfolio</h2>#}
-{#        <hr>#}
-{#        <div class="row">#}
-{#            {% for project in projects %}#}
-{#                <div class="col-sm-6">#}
-{#                    <div class="card">#}
-{#                        <div class="card-body">#}
-{#                            {% if project.url %}#}
-{#                                <a href="{{ project.url }}">#}
-{#                                    <img src="{{ project.image.url }}" class=" img-fluid mb-2" id="portfolioImg" alt="">#}
-{#                                </a>#}
-{#                            {% else %}#}
-{#                                <img src="{{ project.image.url }}" class="img-fluid mb-2" alt="">#}
-{#                            {% endif %}#}
-{#                            <p>{{ project }}</p>#}
-{#                            <hr>#}
-{#                            <h3><a class="btn btn-primary"#}
-{#                                   href="{% url 'projects_detail' pk=project.pk %}">{{ project.title }}</a></h3>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            {% endfor %}#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
-
 <section class="portfolio" id="portfolio">
     <div class="container">
         <div class="section-header">
-            <h1 class="header">Previous Works</h1>
+            <h1 class="header display-4">Previous Works</h1>
         </div>
         <div class="portfolio-wrapper">
             {% for project in projects %}
